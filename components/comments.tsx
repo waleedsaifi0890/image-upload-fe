@@ -3,10 +3,10 @@ import { Box, Text, Divider } from '@chakra-ui/react';
 import type { Comment } from '@app/views/home/main';
 
 interface CommentProps {
-  comments: Comment[];
+  comments?: Comment[];
 }
 
-const Comments = ({ comments }: CommentProps): JSX.Element => {
+const Comments = ({ comments = [] }: CommentProps): JSX.Element => {
   return (
     <Box mt={3} display="flex" flexDirection="column" gap="5">
       {comments?.length > 0 && (

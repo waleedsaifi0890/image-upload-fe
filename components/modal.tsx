@@ -21,7 +21,7 @@ import { useRouter } from 'next/navigation';
 interface ModalProps {
   cardId?: number;
   hasImage?: boolean;
-  comments: Comment[];
+  comments?: Comment[];
 }
 
 const Modal = ({ cardId, hasImage = false, comments }: ModalProps) => {
